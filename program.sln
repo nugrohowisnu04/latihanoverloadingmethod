@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace latihanoverloadingmethod
+{
+    class program
+    {
+        static void main(string[] args)
+        {
+            numbers number = new numbers();
+            console.writeline("min #1: {0}", number.findminimum(3, 1));
+            console.writeline("min #2: {0}", number.findminimum(2, 3, 4));
+            console.writeline();
+            console.writeline("max #1: {0}", number.findmaximum(3, 1));
+            console.writeline("max #2: {0}", number.findmaximum(3, 2, 1));
+
+            console.ReadKey();
+        }
+    }
+}
